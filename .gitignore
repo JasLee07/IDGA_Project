@@ -96,3 +96,4 @@ Assets/AssetStoreTools*
 # *.ogg
 
 # End of .gitignore
+/DetectiveGame0/Library
