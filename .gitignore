@@ -1,6 +1,8 @@
-# Unity project .gitignore - drop in repository root
+# Unity project .gitignore
 
-# OS generated
+############################
+# OS generated files
+############################
 .DS_Store
 .DS_Store?
 ._*
@@ -11,11 +13,9 @@ ehthumbs.db
 Icon?
 desktop.ini
 
-# User-specific
-*.swp
-*.swo
-
-# Visual Studio / Rider / MonoDevelop
+############################
+# Editor / IDE
+############################
 .vscode/
 .vs/
 .idea/
@@ -34,38 +34,39 @@ desktop.ini
 *.VC.db
 *.sln.iml
 
-# Build results
-/[Bb]uild/
-/[Bb]uilds/
-/Build/
-/Builds/
-/Temp/
-/Obj/
-/MemoryCaptures/
-/Logs/
-/Library/
-/Library/ScriptAssemblies/
-/Library/PackageCache/
-/Library/PlayerDataCache/
-/Library/ShaderCache/
-/Temp/UnityTempFiles/
+############################
+# Unity generated (rebuildable)
+############################
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
 
-# Unity Cloud Build user settings
-/[Uu]ser[Ss]ettings/UnityConnectSettings.asset
-
-# Local project settings, caches and auto-generated files
-UserSettings/
+############################
+# Diagnostics / transient
+############################
 sysinfo.txt
 crash_report.*
 *.log
 *.pidb.meta
 *.pidb
 
-# Asset store tools / packages / generated .unitypackage (optional)
+############################
+# Asset Store tools
+############################
 Assets/AssetStoreTools*
+
+############################
+# Exported packages / build artifacts
+############################
 *.unitypackage
 
-# Platform / build artifacts
+# Standalone / platform builds
 *.apk
 *.aab
 *.xcodeproj/
@@ -74,17 +75,21 @@ Assets/AssetStoreTools*
 *.app
 *.ipa
 *.exe
+
+# Native / plugin binaries (usually built elsewhere)
 *.dll
 *.so
 *.dylib
 
-# Temporary archive / compressed files
+# Archives
 *.zip
 *.7z
 *.rar
 
-# Large binary source files (optional: use Git LFS instead of ignoring)
-# Uncomment if you purposely want to keep these out of the repo entirely:
+############################
+# Optional large binary sources
+# (Uncomment if you want to keep these out of git entirely)
+############################
 # *.psd
 # *.tga
 # *.png
@@ -95,5 +100,4 @@ Assets/AssetStoreTools*
 # *.mp3
 # *.ogg
 
-# End of .gitignore
-/DetectiveGame0/Library
+# End of Unity .gitignore
